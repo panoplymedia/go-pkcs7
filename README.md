@@ -13,7 +13,7 @@ This package is designed to use while you're using the standard AES implementati
 ```go
 import (
 	"log"
-	"github.com/richkzad/go-pkcs7"
+	"github.com/panoplymedia/go-pkcs7"
 )
 
 original := []byte("hello")
@@ -28,3 +28,7 @@ if result, err := pkcs7.Unpad(padded, 16); err != nil {
 	log.Fatalln(err)
 }
 ```
+
+## Notes
+
+This package was originally written and hosted at https://github.com/richkzad/go-pkcs7. Since this public repo was removed, this is a mirror.
